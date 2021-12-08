@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="211" id="KGk-i7-Jjw" customClass="DogBreedMainTableCell" customModule="DogBreedsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EzA-by-EBF">
+                        <rect key="frame" x="12" y="6" width="296" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gray_image_background" translatesAutoresizingMaskIntoConstraints="NO" id="nuQ-yM-AIf" customClass="CachedImageView" customModule="DogBreedsApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="296" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nuQ-yM-AIf" secondAttribute="height" multiplier="148:77" id="x3t-Th-PMM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australian" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-lL-7Gr">
+                                <rect key="frame" x="0.0" y="162" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nuQ-yM-AIf" firstAttribute="leading" secondItem="EzA-by-EBF" secondAttribute="leading" id="JKW-0K-vYv"/>
+                            <constraint firstAttribute="bottom" secondItem="Chg-lL-7Gr" secondAttribute="bottom" constant="8" id="JzI-VP-DQy"/>
+                            <constraint firstItem="nuQ-yM-AIf" firstAttribute="top" secondItem="EzA-by-EBF" secondAttribute="top" id="Vi2-Ch-t6e"/>
+                            <constraint firstAttribute="trailing" secondItem="nuQ-yM-AIf" secondAttribute="trailing" id="buy-ZH-t4W"/>
+                            <constraint firstItem="Chg-lL-7Gr" firstAttribute="leading" secondItem="EzA-by-EBF" secondAttribute="leading" id="pcA-gj-O82"/>
+                            <constraint firstItem="Chg-lL-7Gr" firstAttribute="top" secondItem="nuQ-yM-AIf" secondAttribute="bottom" constant="8" id="vCC-UW-VfC"/>
+                            <constraint firstAttribute="trailing" secondItem="Chg-lL-7Gr" secondAttribute="trailing" id="zFw-IK-2jx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EzA-by-EBF" secondAttribute="trailing" constant="12" id="aoj-by-tDq"/>
+                    <constraint firstItem="EzA-by-EBF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="dFT-qV-g9a"/>
+                    <constraint firstItem="EzA-by-EBF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="spL-tS-z1I"/>
+                    <constraint firstAttribute="bottom" secondItem="EzA-by-EBF" secondAttribute="bottom" constant="12" id="spS-KM-8oQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="breedImageView" destination="nuQ-yM-AIf" id="VtW-cv-zuN"/>
+                <outlet property="breedNameLabel" destination="Chg-lL-7Gr" id="TVB-9O-tgN"/>
+                <outlet property="containerView" destination="EzA-by-EBF" id="aCy-vP-os5"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="228.68303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gray_image_background" width="1920" height="1080"/>
+    </resources>
+</document>
